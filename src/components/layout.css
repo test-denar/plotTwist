@@ -4,7 +4,56 @@ html {
   font: 112.5%/1.45em Helvetica, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  background-image: url("../wata.jpg");
+  background-size: 200%;
+  background-attachment: fixed;
+  -webkit-animation: AnimationName 360s ease infinite;
+  -moz-animation: AnimationName 360s ease infinite;
+  animation: AnimationName 360s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 78%
+  }
+
+  50% {
+    background-position: 100% 23%
+  }
+
+  100% {
+    background-position: 0% 78%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 78%
+  }
+
+  50% {
+    background-position: 100% 23%
+  }
+
+  100% {
+    background-position: 0% 78%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 78%
+  }
+
+  50% {
+    background-position: 100% 23%
+  }
+
+  100% {
+    background-position: 0% 78%
+  }
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;

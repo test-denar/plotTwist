@@ -143,7 +143,7 @@ const IndexPage = () => {
             key={image.id}
             onClick={() => toggleImage(image)}
           >
-            <img src={image.url} alt="" style ={{width: '350px'}} />
+            <img src={image.url} alt="" style ={{width: '450px'}} />
             {image.selected && (
               <div
                 style={{

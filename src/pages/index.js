@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react"
 import { Link } from "gatsby"
+import '../styles.css'
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -134,11 +135,15 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-
-      {imagesState.map(image => {
+<div className='container'>
+      {imagesState.map((image, i) => {
         return (
-          <div key={image.id} onClick={() => toggleImage(image)}>
-            <img src={image.url} alt="" />
+          <div
+            className={`post post-${i}`}
+            key={image.id}
+            onClick={() => toggleImage(image)}
+          >
+            <img src={image.url} alt="" style ={{width: '350px'}} />
             {image.selected && (
               <div
                 style={{
@@ -150,9 +155,9 @@ const IndexPage = () => {
                   border: "4px solid #e3fd02",
                   padding: "20px",
                   backgroundColor: "#3110B8",
-                  position: "relative",
+                  position: "absolute",
                   maxWidth: "600px",
-                  top: "-330px",
+                  top: "-130px",
                   left: "230px",
                 }}
               >
@@ -162,6 +167,7 @@ const IndexPage = () => {
           </div>
         )
       })}
+      </div>
     </Layout>
   )
 }

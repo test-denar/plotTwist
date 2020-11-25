@@ -34,8 +34,21 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-
-       <h1>a plot twist toolkit</h1>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "25px",
+          }}
+        >
+          <h1
+            style={{
+              fontSize: "50px",
+            }}
+          >
+            A Plot Twist Toolkit
+          </h1>
+        </div>
 
         <main>{children}</main>
         <footer

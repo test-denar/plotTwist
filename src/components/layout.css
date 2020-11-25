@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "Univers";
+  src: url("../fonts/Univers.woff") format("woff");
+}
+@font-face {
+  font-family: "Wide";
+  src: url("../fonts/Wide.woff") format("woff");
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em Helvetica, serif, sans-serif;
+  font: 112.5%/1.45em "Univers", serif, sans-serif;
+  font-family: "Univers", Helvetica Neue, Helvetica, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
   background-image: url("../wata.jpg");
@@ -12,45 +22,49 @@ html {
   animation: AnimationName 360s ease infinite;
 }
 
+::selection {
+  color: #6f0;
+  background: transparent;
+}
 @-webkit-keyframes AnimationName {
   0% {
-    background-position: 0% 78%
+    background-position: 0% 78%;
   }
 
   50% {
-    background-position: 100% 23%
+    background-position: 100% 23%;
   }
 
   100% {
-    background-position: 0% 78%
+    background-position: 0% 78%;
   }
 }
 
 @-moz-keyframes AnimationName {
   0% {
-    background-position: 0% 78%
+    background-position: 0% 78%;
   }
 
   50% {
-    background-position: 100% 23%
+    background-position: 100% 23%;
   }
 
   100% {
-    background-position: 0% 78%
+    background-position: 0% 78%;
   }
 }
 
 @keyframes AnimationName {
   0% {
-    background-position: 0% 78%
+    background-position: 0% 78%;
   }
 
   50% {
-    background-position: 100% 23%
+    background-position: 100% 23%;
   }
 
   100% {
-    background-position: 0% 78%
+    background-position: 0% 78%;
   }
 }
 
@@ -59,7 +73,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: Helvetica, serif;
+  font-family: "Univers", Helvetica, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -133,8 +147,8 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Wide", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;

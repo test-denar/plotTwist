@@ -139,7 +139,26 @@ const IndexPage = () => {
         return (
           <div key={image.id} onClick={() => toggleImage(image)}>
             <img src={image.url} alt="" />
-            {image.selected && <span>{image.text}</span>}
+            {image.selected && (
+              <div
+                style={{
+                  width: "120%",
+                  color: "white",
+                  border: "1px solid red",
+                  fontSize: "16px",
+                  zIndex: 10,
+                  border: "4px solid #e3fd02",
+                  padding: "20px",
+                  backgroundColor: "#3110B8",
+                  position: "relative",
+                  maxWidth: "600px",
+                  top: "-330px",
+                  left: "230px",
+                }}
+              >
+                {image.text}
+              </div>
+            )}
           </div>
         )
       })}

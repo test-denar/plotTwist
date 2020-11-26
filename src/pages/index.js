@@ -376,7 +376,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="A Plot Twist" />
       <div className="container">
         {imagesState.map((image, i) => {
           return (

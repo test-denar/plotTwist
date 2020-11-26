@@ -8,6 +8,16 @@
   position: relative;
   width: 40%;
 }
+.post > img {
+  cursor: pointer;
+}
+
+img:hover {
+  filter: drop-shadow(2px 2px 2px rgb(0, 255, 0)) !important;
+
+  /* scale: 0.5; */
+  /* transform: translate(120px, 50%); */
+}
 
 .post-0 {
   top: 50px;

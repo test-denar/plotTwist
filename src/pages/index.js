@@ -30,14 +30,13 @@ const imgArray = [
 ]
 
 const IndexPage = () => {
-  console.log("yes")
-  const [clickedItem, setClickedItem] = useState()
-  const [clicked, setClicked] = useState(false)
-  // const clicked = () => setClicked(true);
-  const popup = () => setClicked(clicked => !clicked)
-
-  let images = new Array(8)
-
+  // const postRef = imgArray.map(x => useRef(null))
+  // const handler = idx => () => {
+  //   const next = postRef[idx + 1]
+  //   if (next) {
+  //     next.current.focus()
+  //   }
+  // }
   const [imagesState, setImagesState] = useState([
     {
       url: first,
@@ -373,7 +372,6 @@ const IndexPage = () => {
     setImagesState(copyState)
   }
 
-  console.log("imagesState:", imagesState)
   return (
     <Layout>
       <SEO title="Home" />

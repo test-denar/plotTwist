@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
               fontSize: "50px",
             }}
           >
-            A Plot Twist Toolkit
+            A plot twist Toolkit
           </h1>
         </div>
 

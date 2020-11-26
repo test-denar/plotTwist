@@ -252,6 +252,8 @@ const IndexPage = () => {
         "\n" +
         "\n" +
         "ok, here is my drawing of a toolkit as very sadly don't have paints 🙂 (incl. a face roller!)" +
+        "\n" +
+        "\n" +
         "<img src='/toolkit.png'/>" +
         " i am going to try and think through my thoughts and this drawing while writing this (keep being reminded about the AEP presentation title - things we are thinking with -- and 'things', to me, suggests a toolkit!) I think I am thinking about the importance of A toolkit rather than THE toolkit, the implication that there's multiple readings, visions, drawings etc possible not only in the sense of different objects, but also the subjectivity of each object (I think we must be positioned in/within/inside/underneath/around 'a toolkit'). This makes me feel less scared of being articulate and gives more room for us being playful and situated very much in our own bodies/avatars/lives) - maybe we scared ourselves by saying we wanted it to be useful outside of plot twist? but i think we can make something useful and relevant to plot twist that can also be adaptable and flexible and guiding outside of it? " +
         "\n" +
@@ -393,6 +395,7 @@ const IndexPage = () => {
               />
               {image.selected && (
                 <div
+                  className="textBox"
                   style={{
                     width: "120%",
                     color: "white",
